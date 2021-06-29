@@ -8,7 +8,7 @@ body {
   
     font-family: Helvetica,Arial, sans-serif;
     color: #39a6b2
-
+/*Header / NAVBAR STYLES*/
 }
 header {
     padding: 20px 35px;
@@ -24,9 +24,7 @@ header h1 {
     color: #fce138;
     margin: 0;
 }
-header a {
-    color: #fce138;
-}
+
 header a {
     text-decoration: none;
     color: #fce138;
@@ -49,6 +47,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/*HEADER / NAV BAR STYLES END*/
+
+
 /*footer style*/
 footer {
     background: #fce138;
@@ -63,24 +64,25 @@ footer h2 {
     font-size: 30px;
     margin: 0;
 }
-
-section{
-    padding: 60px;
-}
-
 footer div{
-   
     line-height: 1.5;
     text-align: right;
 }
 footer a{
     color: #024e76;
 }
-/*Survey area*/
-section {
+section{
     padding: 60px;
 }
 /*styling hero*/
+.hero{
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
 .hero-cta{
     width: 35%;
     text-align: right;
@@ -94,12 +96,7 @@ section {
     font-size: 55px;
     color: #fce138;
 }
-.hero{
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    
-}
+
 
 /* ASK ABOUT RELATIVE AND RELATIVE AND ABSOLUTE TO PROFESSOR*/
 .hero-form{
@@ -107,9 +104,6 @@ section {
     padding: 20px;
     color:#024e76;
     background-color: #fce138;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     width: 40%;
     margin: 3.5%;
 }
@@ -139,28 +133,16 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
-/*styling now the images and the intro*/
-.intro{
-    text-align: center;
-}
-.intro p{
-    line-height: 1.7;
-    color:#39a6b2;
-    width: 80%;
-    font-size: 20px;
-    display: inline-block;
-}
-.steps{
-    text-align: center;
-    background-color: #fce138;
-}
+/*"HERO STYLE" ends */
+/*"SECTION STYLE" starts*/
 .section-title{
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
     border-bottom: 3px solid;
-    display: inline-block;
 }
 .primary-border{
     border-color: #fce138;
@@ -168,29 +150,66 @@ section {
 .secondary-border{
     border-color: #39a6b2;
 }
-.steps div{
-    margin-bottom: 80px;
+/* "SECTION STYLE" ends */
+/* "What do we do Style" starts*/
+.intro p{
+    line-height: 1.7;
+    color:#39a6b2;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
 }
-.steps img{
-    width: 15%;
-    margin: 10px 0;
+/* "WHAT DO WE DO STYLE" ends */
+/* "WHAT YOU DO STYLES" starts */
+.steps{
+    background: #fce138;
 }
-.steps h3{
+.step{
+    margin:50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.step h3{
     color:#024e76;
     font-size: 46px;
-    margin-top: 10px;
+    flex: 1 30%;
 }
-.steps{
+.step-info{
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.step-img{
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.step-text{
+    flex: 12;
+}
+.step-img{
+    max-width: 100%;
+}
+.step-text h4{
+    font-size: 26px;
+    line-height: 1.5;
+    color:#024e76
+}
+.steps-text p{
     color:#39a6b2;
-    font-size: 23px;
+    font-size: 18px;
 }
-.steps span{
-    font-size: 38px;
-}
+
 /* --------------------trainers -------------------------*/
 
 .trainers{
-    text-align: center;
+    
 }
 .trainer{
     width: 900px;
@@ -235,7 +254,7 @@ width: 65%;
 
   /* REACHOUT*/
 .contact{
-    text-align: center;
+    
     background-color: #024e76;
 }
 /* why we dont call the class*/
@@ -269,3 +288,7 @@ width: 65%;
 .contact-info a{
     color:#fce138
 } 
+/*flexing*/
+.flex-row{
+    display: flex;
+}
